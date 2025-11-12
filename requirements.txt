@@ -1,0 +1,10 @@
+Flask
+Flask_SQLAlchemy
+Flask_Bcrypt
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+joblib
+pymysql
