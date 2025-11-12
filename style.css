@@ -1,0 +1,146 @@
+/* ============================= */
+/*         Background            */
+/* ============================= */
+body {
+      background: url("{{ url_for('static', filename='images/background.jpg') }}") no-repeat center center fixed
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #f5f5f5;
+}
+
+/* ============================= */
+/*           Header              */
+/* ============================= */
+header {
+  background: rgba(30, 30, 47, 0.9);
+  color: #4ea8de;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================= */
+/*         Main Sections         */
+/* ============================= */
+section, .card {
+  margin: 2em auto;
+  max-width: 850px;
+  padding: 2.5em;
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease-in-out;
+}
+
+section:hover, .card:hover {
+  transform: translateY(-3px);
+}
+
+section p, .card p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-bottom: 2em;
+}
+
+/* ============================= */
+/*         Typography            */
+/* ============================= */
+h1, h2, h3, h4 {
+  color: #4ea8de;
+  margin-bottom: 1em;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================= */
+/*           Buttons             */
+/* ============================= */
+button, .btn {
+  background: linear-gradient(135deg, #4ea8de, #1e6091);
+  color: #fff;
+  border: none;
+  padding: 0.75em 2em;
+  margin: 0.5em;
+  font-size: 1.05em;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5);
+}
+
+button:hover, .btn:hover {
+  background: linear-gradient(135deg, #5390d9, #184e77);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+button:active, .btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================= */
+/*           Tables              */
+/* ============================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+table thead {
+  background-color: rgba(78, 168, 222, 0.85);
+  color: #fff;
+  font-weight: 600;
+}
+
+table tbody tr {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #e0e0e0;
+  transition: background 0.3s ease;
+}
+
+table tbody tr:hover {
+  background-color: rgba(78, 168, 222, 0.3);
+}
+
+/* ============================= */
+/*          Flash Messages       */
+/* ============================= */
+.alert {
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/*           Footer              */
+footer {
+  background: rgba(30, 30, 47, 0.9);
+  color: #dcdcdc;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
